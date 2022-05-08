@@ -28,7 +28,7 @@ Takım Core
 - Senfonia kullanıcılara birbirleriyle ortak çalışma yapma imkanı sunar. 
 - Senfonia de kullanıcılar chat yoluyla iletişim kurabilir 
 - Senfonia ile kullanıcılar Senfonia kitlesine ilan vererek , müzisyen, eğitmen, grup arkadaşları ve daha birçok şey arayabilir. 
-- Senfonia kullanıcıların yüklediği içerikler kullanıcının  hashtaglerine  göre ayırılabilir. Böylece herkes ilgilendiği müzik türüne ait içerikleri görür. 
+- Senfonia kullanıcılarının yüklediği içerikler kullanıcının  hashtaglerine  göre ayırılabilir. Böylece herkes ilgilendiği müzik türüne ait içerikleri görür. 
 
 ## Hedef Kitle
 
@@ -64,6 +64,7 @@ Takım Core
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8647529/Urun.Durumu_Team3.docx)
+  
   Ürün Apk Dosyası linkte mevcuttur:
   [Ürün Apk Dosyası](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8647733/team3_apk.dosyasi.zip)
 
@@ -80,7 +81,7 @@ Takım Core
   -İş paketlerinin dağıtılması sırasında zaman yönetiminin daha iyi kurgulanmasına karar verildi. 
   -Daily Scrum süreleri daha kısa tutulmalı ancak anlık mesajlara daha hızlı dönülmeli 
   -User storyler sprint başında olabildiğince detaylı şekilde developer takımına verilmeli. 
-  -Firebase ve widget yazılımlarının geliştirilmesi ve mimarinin oluşup yazılımın daha temiz hale getirilmesine önem verilmesine karar verildi
+  -Firebase ve widget yazılımlarının geliştirilmesi ve mimarinin oluşup yazılımın daha temiz hale getirilmesi konusuna önem verilmesine karar verildi
 
 -**Diğer Notlar**:
 - N/A
