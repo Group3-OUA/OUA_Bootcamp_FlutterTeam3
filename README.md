@@ -34,7 +34,7 @@ Takım Core
 
 - Spotify kullanıcıları 
 - Smule Kullanıcıları 
-- Müzik severler
+- Müzikseverler
 - 18 - 40 yaş arası kullanıcılar
 
 ## Product Backlog URL
@@ -71,11 +71,11 @@ Takım Core
 
 - **Sprint Review**: 
   -Sprint Review Katılımcıları 
-  -Mehmet Mert Han 
-  -Aleyna Arslanoğlu 
-  -Rümeysa Çelik 
-  -Yusuf Vural 
-  -Alınan Kararlar: Bu sprintte fikir bulma aşaması bir hafta sürdüğünden dolayı kalan haftamızda hedeflemiş olduğumuz profil sayfası çalışmasını bir sonraki sprinte     aktarma kararı aldık. İş yönetimi araçlarının verimini bu sprintte daha iyi anladığımız için bir sonraki sprintte bu araçların kullanımı yaygınlaştırılacaktır.       Uygulama fonksiyonlarının yapım aşaması  basitten karmaşığa gidecek şekilde planlanmıştır.
+  - Mehmet Mert Han
+  - Aleyna Arslanoğlu
+  - Rümeysa Çelik
+  - Yusuf Vural
+  - Alınan Kararlar: Bu sprintte fikir bulma aşaması bir hafta sürdüğünden dolayı kalan haftamızda hedeflemiş olduğumuz profil sayfası çalışmasını bir sonraki sprinte     aktarma kararı aldık. İş yönetimi araçlarının verimini bu sprintte daha iyi anladığımız için bir sonraki sprintte bu araçların kullanımı yaygınlaştırılacaktır.       Uygulama fonksiyonlarının yapım aşaması  basitten karmaşığa gidecek şekilde planlanmıştır.
 
 - **Sprint Retrospective:**
   -İş paketlerinin dağıtılması sırasında zaman yönetiminin daha iyi kurgulanmasına karar verildi. 
