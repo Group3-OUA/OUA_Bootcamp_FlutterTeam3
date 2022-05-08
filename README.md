@@ -64,6 +64,8 @@ Takım Core
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8647529/Urun.Durumu_Team3.docx)
+  Ürün Apk Dosyası linkte mevcuttur:
+  [Ürün Apk Dosyası](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8647733/team3_apk.dosyasi.zip)
 
 
 - **Sprint Review**: 
