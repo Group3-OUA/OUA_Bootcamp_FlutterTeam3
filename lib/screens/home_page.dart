@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
+    bool keyboardIsOpen = MediaQuery.of(context).viewInsets.bottom != 0;
     return Scaffold(
         appBar: buildAppBar(
           context,
@@ -29,24 +30,28 @@ class HomePage extends StatelessWidget {
         body: Column(children: [
           // TextField(
           //   decoration: InputDecoration(
-          //       labelText: 'Search',
-          //       border: OutlineInputBorder(),
-          //       prefixIcon: Icon(Icons.search),),
+          //     labelText: 'Search',
+          //     border: OutlineInputBorder(),
+          //     prefixIcon: Icon(Icons.search),
+          //   ),
           // ),
           Center(
             child: Text(user != null ? 'Welcome ${user.email}' : ''),
           )
         ]),
-        floatingActionButton: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: FloatingActionButton(
-            backgroundColor: Colors.white,
-            child: const Icon(
-              Icons.add,
-              color: ColorConstants.darkblue,
-              size: 30,
+        floatingActionButton: Visibility(
+          visible: !keyboardIsOpen,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
+              backgroundColor: Colors.white,
+              child: const Icon(
+                Icons.add,
+                color: ColorConstants.darkblue,
+                size: 30,
+              ),
+              onPressed: () {},
             ),
-            onPressed: () {},
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -57,29 +62,46 @@ class HomePage extends StatelessWidget {
           child: Container(
             height: 60,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    IconButton(
-                      icon: SvgPicture.asset("assets/icons/home.svg"),
-                      onPressed: () {
-                        // handle the press
-                      },
-                    ),
-                    MaterialButton(
-                      onPressed: () {},
-                      child: Row(children: [
-                        Icon(
-                          Icons.search,
-                          color: ColorConstants.darkblue,
-                        ),
-                      ]),
-                    )
-                  ],
-                )
+                Expanded(
+                  flex: 1,
+                  child: IconButton(
+                    icon: SvgPicture.asset("assets/icons/home.svg"),
+                    onPressed: () {
+                      // handle the press
+                    },
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: IconButton(
+                    icon: SvgPicture.asset("assets/icons/home.svg"),
+                    onPressed: () {
+                      // handle the press
+                    },
+                  ),
+                ),
+                Expanded(flex: 1, child: Text("")),
+                Expanded(
+                  flex: 1,
+                  child: IconButton(
+                    icon: SvgPicture.asset("assets/icons/home.svg"),
+                    onPressed: () {
+                      // handle the press
+                    },
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: IconButton(
+                    icon: SvgPicture.asset("assets/icons/home.svg"),
+                    onPressed: () {
+                      // handle the press
+                    },
+                  ),
+                ),
               ],
             ),
           ),

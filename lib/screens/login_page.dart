@@ -1,11 +1,14 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
 import 'package:bootcamp_project/screens/home_page.dart';
+import 'package:bootcamp_project/screens/register_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
+import 'package:bootcamp_project/widgets/text_field_container.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -22,35 +25,45 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(
-        context,
-        "Log In ",
-        IconButton(
-          icon: SvgPicture.asset("assets/icons/Drawer.svg"),
-          onPressed: () {
-            // handle the press
-          },
-        ),
-        ColorConstants.mainblue,
-      ),
+      // appBar: buildAppBar(
+      //   context,
+      //   "Log In ",
+      //   IconButton(
+      //     icon: SvgPicture.asset("assets/icons/Drawer.svg"),
+      //     onPressed: () {
+      //       // handle the press
+      //     },
+      //   ),
+      //   ColorConstants.mainblue,
+      // ),
       body: Padding(
           padding: PaddingConstant.padding20,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
+            padding: EdgeInsets.only(top: 30),
             children: [
-              TextField(
-                controller: emailController,
-                decoration: const InputDecoration(
-                    labelText: 'Email', border: OutlineInputBorder()),
+              Center(
+                child: Text("Senfonia",
+                    style: GoogleFonts.poppins(
+                        fontSize: 30, color: ColorConstants.mainblue)),
               ),
-              const SizedBox(
-                height: 30,
+              Container(
+                height: 250,
+                child: Image.asset("assets/images/christmas2.png"),
               ),
-              TextField(
-                obscureText: true,
-                controller: passwordController,
-                decoration: const InputDecoration(
-                    labelText: 'Password', border: OutlineInputBorder()),
+              TextFieldContainer(
+                child: TextField(
+                  controller: emailController,
+                  decoration: const InputDecoration(
+                      labelText: 'Email', border: InputBorder.none),
+                ),
+              ),
+              TextFieldContainer(
+                child: TextField(
+                  obscureText: true,
+                  controller: passwordController,
+                  decoration: const InputDecoration(
+                      labelText: 'Password', border: InputBorder.none),
+                ),
               ),
               SizedBox(
                 height: 30,
@@ -102,6 +115,17 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     ),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return RegisterPage();
+                    }));
+                  },
+                  child: const Text(
+                    'Are you not registered? Register here',
+                    style: TextStyle(color: ColorConstants.secondaryColor),
+                  )),
             ],
           )),
     );
