@@ -78,10 +78,10 @@ Takım Core
   - Alınan Kararlar: Bu sprintte fikir bulma aşaması bir hafta sürdüğünden dolayı kalan haftamızda hedeflemiş olduğumuz profil sayfası çalışmasını bir sonraki sprinte     aktarma kararı aldık. İş yönetimi araçlarının verimini bu sprintte daha iyi anladığımız için bir sonraki sprintte bu araçların kullanımı yaygınlaştırılacaktır.       Uygulama fonksiyonlarının yapım aşaması  basitten karmaşığa gidecek şekilde planlanmıştır.
 
 - **Sprint Retrospective:**
-  -İş paketlerinin dağıtılması sırasında zaman yönetiminin daha iyi kurgulanmasına karar verildi. 
-  -Daily Scrum süreleri daha kısa tutulmalı ancak anlık mesajlara daha hızlı dönülmeli 
-  -User storyler sprint başında olabildiğince detaylı şekilde developer takımına verilmeli. 
-  -Firebase ve widget yazılımlarının geliştirilmesi ve mimarinin oluşup yazılımın daha temiz hale getirilmesi konusuna önem verilmesine karar verildi
+  - İş paketlerinin dağıtılması sırasında zaman yönetiminin daha iyi kurgulanmasına karar verildi. 
+  - Daily Scrum süreleri daha kısa tutulmalı ancak anlık mesajlara daha hızlı dönülmeli 
+  - User storyler sprint başında olabildiğince detaylı şekilde developer takımına verilmeli. 
+  - Firebase ve widget yazılımlarının geliştirilmesi ve mimarinin oluşup yazılımın daha temiz hale getirilmesi konusuna önem verilmesine karar verildi
 
 -**Diğer Notlar**:
 - N/A
