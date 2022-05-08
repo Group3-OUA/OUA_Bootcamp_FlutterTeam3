@@ -63,7 +63,7 @@ Takım Core
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8645978/Urun.Durumu.docx)
+  ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8647529/Urun.Durumu_Team3.docx)
 
 
 - **Sprint Review**: 
