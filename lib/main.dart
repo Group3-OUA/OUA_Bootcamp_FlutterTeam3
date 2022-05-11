@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // themeMode: ThemeMode.dark,
       home: StreamBuilder(
         stream: AuthService().firebaseAuth.authStateChanges(),
         builder: (context, snapshot) {

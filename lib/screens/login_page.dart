@@ -1,9 +1,11 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
+import 'package:bootcamp_project/screens/forgot_password.dart';
 import 'package:bootcamp_project/screens/home_page.dart';
 import 'package:bootcamp_project/screens/register_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
+import 'package:bootcamp_project/widgets/rounded_input_field.dart';
 import 'package:bootcamp_project/widgets/text_field_container.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -50,19 +52,32 @@ class _LoginPageState extends State<LoginPage> {
                 height: 250,
                 child: Image.asset("assets/images/christmas2.png"),
               ),
-              TextFieldContainer(
-                child: TextField(
-                  controller: emailController,
-                  decoration: const InputDecoration(
-                      labelText: 'Email', border: InputBorder.none),
-                ),
+              RoundedInputField(
+                hintText: "Your Email",
+                controller: emailController,
               ),
-              TextFieldContainer(
-                child: TextField(
-                  obscureText: true,
-                  controller: passwordController,
-                  decoration: const InputDecoration(
-                      labelText: 'Password', border: InputBorder.none),
+              RoundedInputField(
+                hintText: "Password",
+                controller: passwordController,
+                isPassword: true,
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ForgotPasswordPage()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text("Forgot Password?",
+                          style: GoogleFonts.poppins(
+                              color: ColorConstants.mainblue)),
+                    ],
+                  ),
                 ),
               ),
               SizedBox(

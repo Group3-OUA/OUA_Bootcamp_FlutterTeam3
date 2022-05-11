@@ -72,11 +72,13 @@ class _RegisterPageState extends State<RegisterPage> {
             loading
                 ? const CircularProgressIndicator()
                 : SizedBox(
-                    height: 40,
+                    height: 50,
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          shape: StadiumBorder(),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
                           primary: ColorConstants.mainblue),
                       onPressed: () async {
                         setState(() {

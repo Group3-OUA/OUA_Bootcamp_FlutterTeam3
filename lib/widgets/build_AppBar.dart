@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-AppBar buildAppBar(BuildContext context, String title, IconButton leading,
+AppBar buildAppBar(BuildContext context, String title, Builder leading,
     Color? backgroundColor) {
   return AppBar(
     title: Text(title,
@@ -46,5 +46,59 @@ AppBar buildAppBar(BuildContext context, String title, IconButton leading,
         style: TextButton.styleFrom(primary: Colors.black),
       ),
     ],
+  );
+}
+
+BottomAppBar buildBottomNavBar() {
+  return BottomAppBar(
+    color: ColorConstants.secondaryColor,
+    shape: CircularNotchedRectangle(),
+    notchMargin: 4,
+    child: Container(
+      height: 60,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            flex: 1,
+            child: IconButton(
+              icon: SvgPicture.asset("assets/icons/home.svg"),
+              onPressed: () {
+                // handle the press
+              },
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: IconButton(
+              icon: SvgPicture.asset("assets/icons/home.svg"),
+              onPressed: () {
+                // handle the press
+              },
+            ),
+          ),
+          Expanded(flex: 1, child: Text("")),
+          Expanded(
+            flex: 1,
+            child: IconButton(
+              icon: SvgPicture.asset("assets/icons/Notification.svg"),
+              onPressed: () {
+                // handle the press
+              },
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: IconButton(
+              icon: SvgPicture.asset("assets/icons/Message.svg"),
+              onPressed: () {
+                // handle the press
+              },
+            ),
+          ),
+        ],
+      ),
+    ),
   );
 }

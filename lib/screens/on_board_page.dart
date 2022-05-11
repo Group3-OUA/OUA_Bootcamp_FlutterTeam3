@@ -1,6 +1,7 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
 import 'package:bootcamp_project/screens/login_page.dart';
+import 'package:bootcamp_project/screens/register_page.dart';
 import 'package:bootcamp_project/widgets/text_field_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -80,7 +81,7 @@ class OnBoardPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return LoginPage();
+                          return RegisterPage();
                         }));
                       }),
                 ),

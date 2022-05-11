@@ -41,6 +41,7 @@ dependencies:
   flutter_signin_button: ^2.0.0
   flutter_svg: ^1.0.3
   google_fonts: ^2.3.2
+  hidden_drawer_menu: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +72,8 @@ flutter:
     - assets/images/christmas.svg
     - assets/images/onboard.svg
     - assets/images/christmas2.png
+    - assets/icons/Notification.svg
+    - assets/icons/Message.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
