@@ -28,13 +28,13 @@ Takım Core
 - Senfonia kullanıcılara birbirleriyle ortak çalışma yapma imkanı sunar. 
 - Senfonia de kullanıcılar chat yoluyla iletişim kurabilir 
 - Senfonia ile kullanıcılar Senfonia kitlesine ilan vererek , müzisyen, eğitmen, grup arkadaşları ve daha birçok şey arayabilir. 
-- Senfonia kullanıcıların yüklediği içerikler kullanıcının  hashtaglerine  göre ayırılabilir. Böylece herkes ilgilendiği müzik türüne ait içerikleri görür. 
+- Senfonia kullanıcılarının yüklediği içerikler kullanıcının  hashtaglerine  göre ayırılabilir. Böylece herkes ilgilendiği müzik türüne ait içerikleri görür. 
 
 ## Hedef Kitle
 
 - Spotify kullanıcıları 
 - Smule Kullanıcıları 
-- Müzik severler
+- Müzikseverler
 - 18 - 40 yaş arası kullanıcılar
 
 ## Product Backlog URL
@@ -49,7 +49,7 @@ Takım Core
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 540 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. 
 
 - **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
 
@@ -63,22 +63,25 @@ Takım Core
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8645978/Urun.Durumu.docx)
+  ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8647529/Urun.Durumu_Team3.docx)
+  
+  Ürün Apk Dosyası linkte mevcuttur:
+  [Ürün Apk Dosyası](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8647733/team3_apk.dosyasi.zip)
 
 
 - **Sprint Review**: 
   -Sprint Review Katılımcıları 
-  -Mehmet Mert Han 
-  -Aleyna Arslanoğlu 
-  -Rümeysa Çelik 
-  -Yusuf Vural 
-  -Alınan Kararlar: Bu sprintte fikir bulma aşaması bir hafta sürdüğünden dolayı kalan haftamızda hedeflemiş olduğumuz profil sayfası çalışmasını bir sonraki sprinte     aktarma kararı aldık. İş yönetimi araçlarının verimini bu sprintte daha iyi anladığımız için bir sonraki sprintte bu araçların kullanımı yaygınlaştırılacaktır.       Uygulama fonksiyonlarının yapım aşaması  basitten karmaşığa gidecek şekilde planlanmıştır.
+  - Mehmet Mert Han
+  - Aleyna Arslanoğlu
+  - Rümeysa Çelik
+  - Yusuf Vural
+  - Alınan Kararlar: Bu sprintte fikir bulma aşaması bir hafta sürdüğünden dolayı kalan haftamızda hedeflemiş olduğumuz profil sayfası çalışmasını bir sonraki sprinte     aktarma kararı aldık. İş yönetimi araçlarının verimini bu sprintte daha iyi anladığımız için bir sonraki sprintte bu araçların kullanımı yaygınlaştırılacaktır.       Uygulama fonksiyonlarının yapım aşaması  basitten karmaşığa gidecek şekilde planlanmıştır.
 
 - **Sprint Retrospective:**
-  -İş paketlerinin dağıtılması sırasında zaman yönetiminin daha iyi kurgulanmasına karar verildi. 
-  -Daily Scrum süreleri daha kısa tutulmalı ancak anlık mesajlara daha hızlı dönülmeli 
-  -User storyler sprint başında olabildiğince detaylı şekilde developer takımına verilmeli. 
-  -Firebase ve widget yazılımlarının geliştirilmesi ve mimarinin oluşup yazılımın daha temiz hale getirilmesine önem verilmesine karar verildi
+  - İş paketlerinin dağıtılması sırasında zaman yönetiminin daha iyi kurgulanmasına karar verildi. 
+  - Daily Scrum süreleri daha kısa tutulmalı ancak anlık mesajlara daha hızlı dönülmeli 
+  - User storyler sprint başında olabildiğince detaylı şekilde developer takımına verilmeli. 
+  - Firebase ve widget yazılımlarının geliştirilmesi ve mimarinin oluşup yazılımın daha temiz hale getirilmesi konusuna önem verilmesine karar verildi
 
 -**Diğer Notlar**:
 - N/A
