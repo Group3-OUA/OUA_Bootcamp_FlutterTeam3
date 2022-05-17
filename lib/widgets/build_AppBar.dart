@@ -1,5 +1,6 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
+import 'package:bootcamp_project/screens/about_us.dart';
 import 'package:bootcamp_project/screens/register_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:flutter/material.dart';
@@ -72,9 +73,13 @@ BottomAppBar buildBottomNavBar() {
           Expanded(
             flex: 1,
             child: IconButton(
-              icon: SvgPicture.asset("assets/icons/home.svg"),
+              icon: Image.asset("assets/icons/write.png"),
               onPressed: () {
                 // handle the press
+                // Navigator.push(context, MaterialPageRoute(
+                //         builder: (context) => AboutUsPage(),
+                // ),
+                // );
               },
             ),
           ),

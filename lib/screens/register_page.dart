@@ -74,56 +74,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 : SizedBox(
                     height: 50,
                     width: MediaQuery.of(context).size.width * 0.8,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          primary: ColorConstants.mainblue),
-                      onPressed: () async {
-                        setState(() {
-                          loading = true;
-                        });
-                        if (emailController.text == "" ||
-                            passwordController.text == "") {
-                          ScaffoldMessenger.of(context)
-                              .showSnackBar(const SnackBar(
-                            content: Text('Please fill all the fields'),
-                            backgroundColor: Colors.red,
-                          ));
-                        } else if (passwordController.text !=
-                            confirmPasswordController.text) {
-                          ScaffoldMessenger.of(context)
-                              .showSnackBar(const SnackBar(
-                            content: Text('Passwords do not match'),
-                            backgroundColor: Colors.red,
-                          ));
-                        } else {
-                          User? result = await AuthService().register(
-                              emailController.text,
-                              passwordController.text,
-                              context);
-                          if (result != null) {
-                            print("success");
-                            Navigator.pushAndRemoveUntil(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => HomePage()),
-                                (route) => false);
-                          }
-                        }
-                        setState(() {
-                          loading = false;
-                        });
-                      },
-                      child: const Text(
-                        'Register',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
+                    child: RegisterButton(context),
                   ),
             TextButton(
                 onPressed: () {
@@ -147,14 +98,14 @@ class _RegisterPageState extends State<RegisterPage> {
                     setState(() {
                       loading = false;
                     });
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return HomePage();
-                        },
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) {
+                    //       return HomePage();
+                    //     },
+                    //   ),
+                    // );
                   }),
           ],
         ),
@@ -162,35 +113,81 @@ class _RegisterPageState extends State<RegisterPage> {
     ));
   }
 
-  TextField confirmPasswordFiels() {
-    return TextField(
-      obscureText: true,
-      controller: confirmPasswordController,
-      decoration: const InputDecoration(
-        labelText: 'Confirm Password',
-        border: InputBorder.none,
+  ElevatedButton RegisterButton(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          primary: ColorConstants.mainblue),
+      onPressed: () async {
+        setState(() {
+          loading = true;
+        });
+        if (emailController.text == "" || passwordController.text == "") {
+          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('Please fill all the fields'),
+            backgroundColor: Colors.red,
+          ));
+        } else if (passwordController.text != confirmPasswordController.text) {
+          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('Passwords do not match'),
+            backgroundColor: Colors.red,
+          ));
+        } else {
+          User? result = await AuthService()
+              .register(emailController.text, passwordController.text, context);
+          if (result != null) {
+            print("success");
+            Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => HomePage(result)),
+                (route) => false);
+          }
+        }
+        setState(() {
+          loading = false;
+        });
+      },
+      child: const Text(
+        'Register',
+        style: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
 
-  TextField passwordFields() {
-    return TextField(
-      obscureText: true,
-      controller: passwordController,
-      decoration: const InputDecoration(
-        labelText: 'Password',
-        border: InputBorder.none,
-      ),
-    );
-  }
+  // TextField confirmPasswordFiels() {
+  //   return TextField(
+  //     obscureText: true,
+  //     controller: confirmPasswordController,
+  //     decoration: const InputDecoration(
+  //       labelText: 'Confirm Password',
+  //       border: InputBorder.none,
+  //     ),
+  //   );
+  // }
 
-  TextField emailFiels() {
-    return TextField(
-      controller: emailController,
-      decoration: const InputDecoration(
-        labelText: 'Email',
-        border: InputBorder.none,
-      ),
-    );
-  }
+  // TextField passwordFields() {
+  //   return TextField(
+  //     obscureText: true,
+  //     controller: passwordController,
+  //     decoration: const InputDecoration(
+  //       labelText: 'Password',
+  //       border: InputBorder.none,
+  //     ),
+  //   );
+  // }
+
+  // TextField emailFiels() {
+  //   return TextField(
+  //     controller: emailController,
+  //     decoration: const InputDecoration(
+  //       labelText: 'Email',
+  //       border: InputBorder.none,
+  //     ),
+  //   );
+  // }
 }

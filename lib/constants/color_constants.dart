@@ -8,4 +8,6 @@ class ColorConstants {
   static const Color lightblue = Color(0xFFE6EEFA);
   static const Color mainblue = Color(0xFF4B93FF);
   static const Color textgrey = Color(0xFFA49E9E);
+  static const Color lightgrey = Color(0xFFF4F4F4);
+  static const Color white = Color(0xFFFFFFFF);
 }

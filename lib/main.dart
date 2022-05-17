@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
       // themeMode: ThemeMode.dark,
       home: StreamBuilder(
         stream: AuthService().firebaseAuth.authStateChanges(),
-        builder: (context, snapshot) {
+        builder: (context, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
-            return const HomePage();
+            return HomePage(snapshot.data);
           }
           return OnBoardPage();
         },
