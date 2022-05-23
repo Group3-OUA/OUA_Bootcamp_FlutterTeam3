@@ -101,6 +101,7 @@ Takım Core
 
 
 - **Daily Scrum**: Daily Scrumlar DC ve Whatsapp üzerinden yürütülmekte olup takım üyeleri gerektiğinde birbirlerini arayarak kısa toplantılar düzenlemiştir. Daily Scrum ekran görüntüleri Readme’de tarafımızdan paylaşılmıştır, daily scrum notları miro boardımızda belirtilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: 
+Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıyeten belirtilmiştir.
 [2. Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757505/2.sprint.daily.scrum.ssleri.docx)
 
 
