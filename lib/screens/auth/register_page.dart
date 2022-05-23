@@ -1,7 +1,7 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
 import 'package:bootcamp_project/screens/home_page.dart';
-import 'package:bootcamp_project/screens/login_page.dart';
+import 'package:bootcamp_project/screens/auth/login_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:bootcamp_project/widgets/rounded_input_field.dart';

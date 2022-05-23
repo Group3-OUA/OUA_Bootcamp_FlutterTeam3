@@ -33,6 +33,13 @@ class _EditBlogPageState extends State<EditBlogPage> {
       appBar: AppBar(
         backgroundColor: ColorConstants.mainblue,
         elevation: 0,
+        title: Text(
+          "Blog Düzenle",
+          style: GoogleFonts.poppins(
+            fontSize: 20,
+            color: Colors.white,
+          ),
+        ),
         actions: [
           IconButton(
               onPressed: () async {

@@ -36,7 +36,7 @@ class AboutUsPage extends StatelessWidget {
                   fontSize: 20, color: ColorConstants.darkblue),
             ),
             Text(
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.?",
+              "2022 Yılında kurulan Core takımı, uygulama oluşturma faaliyetlerini Oyun ve Uygulama Akademisi’nin öncülüğünde 2022 Bootcamp sürecinde müzisyenler ve müzikle alakalı bilgi edinmek  isteyen kullanıcılar için üretmiş oldukları  'Müzisyenler için Sosyal medya projesi' ile kariyer hayatlarına başlamış bulunmaktadır. Projelerinde tamamiyle insanlara müzik konusunda özgüven kazandırma, birbirleriyle kaliteli bir ortamda iletişime geçme,tecrübe paylaşımı yapma ve kullanıcıların müziklerini sorunsuz bir şekilde birbirleri ile paylaşma amacıyla çalışmışlardır. Uygulama içerisinde kullanıcılara sağlanan blog yazabilme, ilan oluşturabilme ve kendi orkestrasını yaratabilme özellikleri üzerinde çalışmalarını sürdürmektedirler. Core olarak;  kitlemize  hitap edecek teknolojileri ve hizmetleri günden güne sizler için güncelliyoruz ve sizlere sunmaktan mutluluk duyuyoruz.",
               style: GoogleFonts.poppins(
                   fontSize: 15, color: ColorConstants.black),
             ),

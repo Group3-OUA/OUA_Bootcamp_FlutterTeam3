@@ -1,6 +1,7 @@
+import 'package:bootcamp_project/intro_screen/on_board2.dart';
 import 'package:bootcamp_project/screens/home_page.dart';
 import 'package:bootcamp_project/screens/on_board_page.dart';
-import 'package:bootcamp_project/screens/register_page.dart';
+import 'package:bootcamp_project/screens/auth/register_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
           if (snapshot.hasData) {
             return HomePage(snapshot.data);
           }
-          return OnBoardPage();
+          return OnBoardingScreen();
         },
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/services/firestore_service.dart';
+import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:bootcamp_project/widgets/text_field_container.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -23,16 +24,30 @@ class _AddBlogPageState extends State<AddBlogPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: ColorConstants.mainblue,
-        elevation: 0,
-      ),
+      appBar: buildAppBar(context, "Blog Ekle", Builder(
+        builder: (context) {
+          return IconButton(
+            icon: Icon(
+              Icons.arrow_back_ios_new,
+            ),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          );
+        },
+      ), Colors.transparent),
       body: SingleChildScrollView(
           child: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Center(
+              child: Container(
+                height: 200,
+                child: Image.asset("assets/images/christmas2.png"),
+              ),
+            ),
             Text("Title",
                 style: GoogleFonts.poppins(
                     fontSize: 20, color: ColorConstants.mainblue)),

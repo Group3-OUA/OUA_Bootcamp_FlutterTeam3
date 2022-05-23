@@ -1,18 +1,15 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
-import 'package:bootcamp_project/models/blog.dart';
-import 'package:bootcamp_project/screens/blog/edit_blog.dart';
+import 'package:bootcamp_project/models/advert.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BlogDetail extends StatelessWidget {
-  BlogModel blog;
-  BlogDetail(this.blog);
+class AdvertDetailPage extends StatelessWidget {
+  AdvertModel advert;
+  AdvertDetailPage(this.advert);
   FirebaseFirestore firestore = FirebaseFirestore.instance;
-
-  // const BlogDetail({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +21,15 @@ class BlogDetail extends StatelessWidget {
             children: [
               Container(
                 child: Center(
-                  child: Text('${blog.title}',
-                      style: GoogleFonts.poppins(
-                          fontSize: 20,
-                          color: ColorConstants.white,
-                          fontWeight: FontWeight.bold)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text('${advert.title}',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            fontSize: 20,
+                            color: ColorConstants.white,
+                            fontWeight: FontWeight.bold)),
+                  ),
                 ),
                 height: MediaQuery.of(context).size.height * 0.25,
                 width: MediaQuery.of(context).size.width,
@@ -66,12 +67,15 @@ class BlogDetail extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
-                  '${blog.title}',
-                  style: GoogleFonts.poppins(
-                      fontSize: 20,
-                      color: ColorConstants.darkblue,
-                      fontWeight: FontWeight.bold),
+                Expanded(
+                  child: Text(
+                    '${advert.title}',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.poppins(
+                        fontSize: 20,
+                        color: ColorConstants.darkblue,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ],
             ),
@@ -83,7 +87,7 @@ class BlogDetail extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
-            child: Text('${blog.description}',
+            child: Text('${advert.category}',
                 style: GoogleFonts.poppins(
                     fontSize: 15,
                     color: ColorConstants.darkblue,

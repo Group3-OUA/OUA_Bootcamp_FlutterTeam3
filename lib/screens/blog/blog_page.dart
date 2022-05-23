@@ -1,10 +1,11 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/models/blog.dart';
 import 'package:bootcamp_project/screens/about_us.dart';
-import 'package:bootcamp_project/screens/add_blog.dart';
-import 'package:bootcamp_project/screens/edit_blog.dart';
+import 'package:bootcamp_project/screens/blog/add_blog.dart';
+import 'package:bootcamp_project/screens/blog/blog_detail.dart';
+import 'package:bootcamp_project/screens/blog/edit_blog.dart';
 import 'package:bootcamp_project/screens/home_page.dart';
-import 'package:bootcamp_project/screens/register_page.dart';
+import 'package:bootcamp_project/screens/auth/register_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -23,62 +24,9 @@ class BlogPage extends StatelessWidget {
     final user = FirebaseAuth.instance.currentUser;
     bool keyboardIsOpen = MediaQuery.of(context).viewInsets.bottom != 0;
     return Scaffold(
-        drawer: Drawer(
-          backgroundColor: ColorConstants.lightgrey,
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              DrawerHeader(
-                decoration: BoxDecoration(
-                  color: ColorConstants.lightblue,
-                ),
-                child: Center(
-                  child: Text('Welcome to Blog App',
-                      style: GoogleFonts.poppins(
-                          fontSize: 20, color: ColorConstants.darkblue)),
-                ),
-              ),
-              ListTile(
-                title: TextButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => AboutUsPage(),
-                      ),
-                    );
-                  },
-                  child: Text("Biz Kimiz"),
-                ),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              TextButton.icon(
-                onPressed: () async {
-                  await AuthService().signOut();
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return RegisterPage();
-                      },
-                    ),
-                  );
-                },
-                icon: const Icon(Icons.logout),
-                label: const Text("Sign Out"),
-                style: TextButton.styleFrom(primary: Colors.black),
-              ),
-            ],
-          ),
-        ),
         appBar: buildAppBar(
           context,
-          "Explore",
+          "Bloglar",
           Builder(
             builder: (context) {
               return IconButton(
@@ -137,7 +85,7 @@ class BlogPage extends StatelessWidget {
                               ),
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => EditBlogPage(blog)));
+                                    builder: (context) => BlogDetail(blog)));
                               },
                             ),
                           ),

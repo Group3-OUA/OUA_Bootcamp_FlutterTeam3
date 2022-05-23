@@ -43,6 +43,7 @@ dependencies:
   google_fonts: ^2.3.2
   hidden_drawer_menu: ^3.0.1
   cloud_firestore: ^3.1.15
+  smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
   flutter_test:
@@ -77,6 +78,16 @@ flutter:
     - assets/icons/Message.svg
     - assets/icons/write.png
     - assets/images/hug.png
+    - assets/images/forgotpass.png
+    - assets/icons/setting.png
+    - assets/images/Frame.png
+    - assets/images/intro1.png
+    - assets/images/intro2.png
+    - assets/images/intro3.png
+
+
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

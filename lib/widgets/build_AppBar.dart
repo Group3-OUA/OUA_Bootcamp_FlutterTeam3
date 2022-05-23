@@ -1,8 +1,11 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
 import 'package:bootcamp_project/screens/about_us.dart';
-import 'package:bootcamp_project/screens/register_page.dart';
+import 'package:bootcamp_project/screens/advert/advert_view.dart';
+import 'package:bootcamp_project/screens/auth/register_page.dart';
+import 'package:bootcamp_project/screens/settings/settings.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -30,22 +33,42 @@ AppBar buildAppBar(BuildContext context, String title, Builder leading,
       ),
     ),
     actions: [
-      TextButton.icon(
-        onPressed: () async {
-          await AuthService().signOut();
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) {
-                return RegisterPage();
-              },
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: CircleAvatar(
+          backgroundColor: ColorConstants.lightblue,
+          child: IconButton(
+            icon: SvgPicture.asset(
+              'assets/icons/Notification.svg',
+              color: Colors.black,
             ),
-          );
-        },
-        icon: const Icon(Icons.logout),
-        label: const Text("Sign Out"),
-        style: TextButton.styleFrom(primary: Colors.black),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SettingPage(),
+                ),
+              );
+            },
+          ),
+        ),
       ),
+      // TextButton.icon(
+      //   onPressed: () async {
+      //     await AuthService().signOut();
+      //     Navigator.push(
+      //       context,
+      //       MaterialPageRoute(
+      //         builder: (context) {
+      //           return RegisterPage();
+      //         },
+      //       ),
+      //     );
+      //   },
+      //   icon: const Icon(Icons.logout),
+      //   label: const Text("Sign Out"),
+      //   style: TextButton.styleFrom(primary: Colors.black),
+      // ),
     ],
   );
 }

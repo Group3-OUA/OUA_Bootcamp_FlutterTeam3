@@ -39,4 +39,16 @@ class FirestoreService {
       print(e);
     }
   }
+
+  Future insertAdvert(String title, String category, String userId) async {
+    try {
+      await firestore.collection("adverts").add({
+        'title': title,
+        'date': DateTime.now(),
+        'category': category,
+        'userId': userId,
+      });
+    } catch (e) {}
+    print("object");
+  }
 }

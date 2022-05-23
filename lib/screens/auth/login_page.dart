@@ -1,8 +1,9 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/constants/padding_constant.dart';
-import 'package:bootcamp_project/screens/forgot_password.dart';
+import 'package:bootcamp_project/screens/auth/register_page.dart';
+import 'package:bootcamp_project/screens/auth/forgot_password.dart';
 import 'package:bootcamp_project/screens/home_page.dart';
-import 'package:bootcamp_project/screens/register_page.dart';
+import 'package:bootcamp_project/screens/auth/register_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:bootcamp_project/widgets/rounded_input_field.dart';
