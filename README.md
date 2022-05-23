@@ -87,3 +87,47 @@ Takım Core
 - N/A
 
 ---
+
+
+# Sprint 2
+
+- **Sprint Notları**: User Storyler için belirlemiş olduğumuz kullanıcı tipleri, ve 2.sprinte ait storyler miro boardımızda belirtilmiştir.  
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 240 Puan
+
+- **Puan tamamlama mantığı**: Sprint içinde tamamlanması gereken tahmini puan: 350 dir. Puan tamamlama mantığı; Toplamda proje boyunca tamamlanması gereken 540 puanlık backlogun 100 puanını ilk sprintte tamamlamıştık. Geriye kalan 440 puanın 350sini 2.sprintte tamamlamayı hedefledik.  
+
+- **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
+
+
+- **Daily Scrum**: Daily Scrumlar DC ve Whatsapp üzerinden yürütülmekte olup takım üyeleri gerektiğinde birbirlerini arayarak kısa toplantılar düzenlemiştir. Daily Scrum ekran görüntüleri Readme’de tarafımızdan paylaşılmıştır, daily scrum notları miro boardımızda belirtilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: 
+[2. Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757505/2.sprint.daily.scrum.ssleri.docx)
+
+
+- **Sprint board update**: Sprint board screenshotları:  Backlog 1,2 ve 3 linkteki dosyada mevcuttur.
+![Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757473/backlog.update.docx)
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+  ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757490/Uygulama.Goruntuleri.docx)
+
+
+- **Sprint Review**: 
+  -Sprint Review Katılımcıları 
+  - Mehmet Mert Han
+  - Aleyna Arslanoğlu
+  - Rümeysa Çelik
+  - Yusuf Vural
+  - Sprinte başlarken hedeflediğimiz görevlerin çoğunu tamamladık, tamamlamayı hedeflediğimiz görevler içinde büyük yer kaplayan chat özelliği maalesef son anda teknik bir arıza sebebiyle yetişmedi. Bu olay takıma risk planlamanın ne kadar önemli olduğunu hatırlattı. Bir sonraki sprintte risk planlamasına daha fazla önem verilecek. 
+  - Developer Team User storylerdeki beklentileri yerine getirdi, ancak storyler basit kaldı. Son sprintte storyler daha detaylandırılmış olması gerektiği düşünüldü. 
+  - İş yönetimi araçlarına önem vermek doğru bir karardı bu sprintte buna dikkat edildi ve verimlilik arttı.
+  - Toplantı sürelerini kısaltmak iyi oldu , takımın verimliliğini arttırdı. 
+
+- **Sprint Retrospective:**
+  - Her verilen backlog için olası riskler atanmalı ve bu risklere ait çözüm planları oluşturulmalı.  
+  - İş yetiştirme süresi azaltılmalı, geriye kalan süre iyi değerlendirilmeli. 
+  - User storylerin karmaşıklık seviyesi arttırılmalı. 
+  - Firebase de sıkça alınan bağlantı probleminin nedenleri araştırılmalı.
+
+-**Diğer Notlar**:
+- N/A
