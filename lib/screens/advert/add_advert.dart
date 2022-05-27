@@ -19,6 +19,7 @@ class AddAdvertPage extends StatefulWidget {
 class _AddAdvertPageState extends State<AddAdvertPage> {
   TextEditingController titleController = TextEditingController();
   TextEditingController categoryController = TextEditingController();
+  TextEditingController descriptionController = TextEditingController();
 
   final items = ['Electronics', 'Fashion', 'Books', 'Sports', 'Others'];
   String? value;
@@ -86,7 +87,21 @@ class _AddAdvertPageState extends State<AddAdvertPage> {
                 ),
               ),
             ),
+
+            Text("Description",
+                style: GoogleFonts.poppins(
+                    fontSize: 20, color: ColorConstants.mainblue)),
             SizedBox(height: 10),
+            SizedBox(
+              child: TextFieldContainer(
+                child: TextField(
+                  controller: descriptionController,
+                  minLines: 5,
+                  maxLines: 10,
+                  decoration: InputDecoration(border: InputBorder.none),
+                ),
+              ),
+            ),
             Container(
                 height: 50,
                 width: MediaQuery.of(context).size.width,
@@ -95,7 +110,8 @@ class _AddAdvertPageState extends State<AddAdvertPage> {
                       shape: StadiumBorder(), primary: ColorConstants.mainblue),
                   onPressed: () async {
                     if (titleController.text == "" ||
-                        categoryController.text == "") {
+                        categoryController.text == "" ||
+                        descriptionController.text == "") {
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                         content: Text("Please fill all the fields"),
                       ));
@@ -107,6 +123,7 @@ class _AddAdvertPageState extends State<AddAdvertPage> {
                       await FirestoreService().insertAdvert(
                         titleController.text,
                         categoryController.text,
+                        descriptionController.text,
                         widget.user.uid,
                       );
 

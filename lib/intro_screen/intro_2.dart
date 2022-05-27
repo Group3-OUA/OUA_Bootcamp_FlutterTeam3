@@ -7,6 +7,7 @@ class IntroPage2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String url = "assets/images/intro1.png";
     return Scaffold(
       body: Center(
           child: Column(
@@ -20,7 +21,7 @@ class IntroPage2 extends StatelessWidget {
           Container(
             height: 380,
             child: Image.asset(
-              "assets/images/intro1.png",
+              url,
               fit: BoxFit.fitWidth,
             ),
           ),

@@ -3,6 +3,7 @@ import 'package:bootcamp_project/constants/padding_constant.dart';
 import 'package:bootcamp_project/screens/home_page.dart';
 import 'package:bootcamp_project/screens/auth/login_page.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
+import 'package:bootcamp_project/services/firestore_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:bootcamp_project/widgets/rounded_input_field.dart';
 import 'package:bootcamp_project/widgets/text_field_container.dart';
@@ -18,6 +19,9 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  TextEditingController nameController = TextEditingController();
+
+  TextEditingController nickNameController = TextEditingController();
   //const RegisterPage({Key? key}) : super(key: key);
   TextEditingController emailController = TextEditingController();
 
@@ -54,7 +58,12 @@ class _RegisterPageState extends State<RegisterPage> {
               child: Image.asset("assets/images/christmas2.png"),
             ),
             // TextFieldContainer(child: emailFiels()),
-
+            RoundedInputField(
+              hintText: "Your Name",
+              controller: nameController,
+            ),
+            RoundedInputField(
+                hintText: "Your Nickname", controller: nickNameController),
             RoundedInputField(
               hintText: "Your Email",
               controller: emailController,
@@ -94,18 +103,26 @@ class _RegisterPageState extends State<RegisterPage> {
                       loading = true;
                     });
 
-                    await AuthService().signInWithGoogle();
+                    User? user = await AuthService().signInWithGoogle();
+
                     setState(() {
                       loading = false;
                     });
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) {
-                    //       return HomePage();
-                    //     },
-                    //   ),
-                    // );
+                    if (user != null) {
+                      FirestoreService().addUser(
+                          user.email.toString().trim(),
+                          user.email
+                              .toString()
+                              .trim()
+                              .replaceAll("@gmail.com", ""),
+                          user.displayName.toString().trim());
+                      print("success");
+                      Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomePage(user)),
+                          (route) => false);
+                    }
                   }),
           ],
         ),
@@ -137,6 +154,8 @@ class _RegisterPageState extends State<RegisterPage> {
         } else {
           User? result = await AuthService()
               .register(emailController.text, passwordController.text, context);
+          FirestoreService().addUser(emailController.text.trim(),
+              nickNameController.text, nameController.text.trim());
           if (result != null) {
             print("success");
             Navigator.pushAndRemoveUntil(

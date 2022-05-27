@@ -24,11 +24,14 @@ class BlogDetail extends StatelessWidget {
             children: [
               Container(
                 child: Center(
-                  child: Text('${blog.title}',
-                      style: GoogleFonts.poppins(
-                          fontSize: 20,
-                          color: ColorConstants.white,
-                          fontWeight: FontWeight.bold)),
+                  child: Text(
+                    '${blog.title}',
+                    style: GoogleFonts.poppins(
+                        fontSize: 20,
+                        color: ColorConstants.white,
+                        fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
                 height: MediaQuery.of(context).size.height * 0.25,
                 width: MediaQuery.of(context).size.width,
@@ -69,9 +72,10 @@ class BlogDetail extends StatelessWidget {
                 Text(
                   '${blog.title}',
                   style: GoogleFonts.poppins(
-                      fontSize: 20,
+                      fontSize: 17,
                       color: ColorConstants.darkblue,
                       fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),

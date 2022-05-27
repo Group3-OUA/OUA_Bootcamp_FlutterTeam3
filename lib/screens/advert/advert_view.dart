@@ -2,6 +2,7 @@ import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/models/advert.dart';
 import 'package:bootcamp_project/screens/advert/add_advert.dart';
 import 'package:bootcamp_project/screens/advert/advert_detail.dart';
+import 'package:bootcamp_project/services/firestore_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -60,14 +61,33 @@ class AdvertViewPage extends StatelessWidget {
                                 //this adverts order
 
                                 IconButton(
-                                  icon: Icon(Icons.delete),
-                                  onPressed: () {
-                                    firestore
-                                        .collection('adverts')
-                                        .doc(advert.id)
-                                        .delete();
-                                  },
-                                ),
+                                    onPressed: () async {
+                                      await showDialog(
+                                          context: context,
+                                          builder: (BuildContext context) {
+                                            return AlertDialog(
+                                              title: Text("Please confirm"),
+                                              content: Text(
+                                                  "Are you sure you want to delete this blog?"),
+                                              actions: [
+                                                TextButton(
+                                                    onPressed: () {
+                                                      firestore
+                                                          .collection('adverts')
+                                                          .doc(advert.id)
+                                                          .delete();
+                                                    },
+                                                    child: Text("Yes")),
+                                                TextButton(
+                                                    onPressed: () {
+                                                      Navigator.pop(context);
+                                                    },
+                                                    child: Text("No"))
+                                              ],
+                                            );
+                                          });
+                                    },
+                                    icon: Icon(Icons.delete)),
                               ],
                             ),
                             leading: CircleAvatar(

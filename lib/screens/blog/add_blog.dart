@@ -54,6 +54,10 @@ class _AddBlogPageState extends State<AddBlogPage> {
             SizedBox(height: 10),
             TextFieldContainer(
               child: TextField(
+                // keyboardType: TextInputType.multiline,
+                minLines: 1,
+                maxLines: 20,
+
                 controller: titleController,
                 decoration: InputDecoration(border: InputBorder.none),
               ),

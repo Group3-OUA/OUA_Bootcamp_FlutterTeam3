@@ -85,7 +85,7 @@ class BlogPage extends StatelessWidget {
                               ),
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => BlogDetail(blog)));
+                                    builder: (context) => EditBlogPage(blog)));
                               },
                             ),
                           ),

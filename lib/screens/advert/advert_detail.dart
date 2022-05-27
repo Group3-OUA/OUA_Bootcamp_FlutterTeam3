@@ -23,7 +23,7 @@ class AdvertDetailPage extends StatelessWidget {
                 child: Center(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('${advert.title}',
+                    child: Text('${advert.category}',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             fontSize: 20,
@@ -69,7 +69,7 @@ class AdvertDetailPage extends StatelessWidget {
               children: [
                 Expanded(
                   child: Text(
-                    '${advert.title}',
+                    '${advert.category}',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
                         fontSize: 20,
@@ -87,11 +87,19 @@ class AdvertDetailPage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
-            child: Text('${advert.category}',
+            child: Text('${advert.title}',
                 style: GoogleFonts.poppins(
                     fontSize: 15,
                     color: ColorConstants.darkblue,
                     fontWeight: FontWeight.w500)),
+          ),
+          Padding(
+            padding: PaddingConstant.padding20,
+            child: Text(
+              advert.description,
+              style: GoogleFonts.poppins(
+                  fontSize: 15, fontWeight: FontWeight.normal),
+            ),
           ),
           Divider(
             color: ColorConstants.darkblue.withOpacity(0.1),

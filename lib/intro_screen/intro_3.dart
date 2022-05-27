@@ -8,13 +8,14 @@ class IntroPage3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String url = "assets/images/intro3.png";
     return Scaffold(
       body: Column(
         children: [
           SizedBox(height: MediaQuery.of(context).size.height * 0.02),
           Container(
             child: Image.asset(
-              "assets/images/intro3.png",
+              url,
               fit: BoxFit.fitWidth,
             ),
           ),

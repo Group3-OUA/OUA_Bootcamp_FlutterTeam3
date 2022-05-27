@@ -1,10 +1,13 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
 import 'package:bootcamp_project/models/blog.dart';
+import 'package:bootcamp_project/models/users.dart';
+import 'package:bootcamp_project/profile.dart';
 import 'package:bootcamp_project/screens/about_us.dart';
 import 'package:bootcamp_project/screens/advert/add_advert.dart';
 import 'package:bootcamp_project/screens/advert/advert_view.dart';
 import 'package:bootcamp_project/screens/blog/add_blog.dart';
 import 'package:bootcamp_project/screens/blog/blog_detail.dart';
+import 'package:bootcamp_project/screens/blog/blog_intro.dart';
 import 'package:bootcamp_project/screens/blog/blog_page.dart';
 import 'package:bootcamp_project/screens/blog/edit_blog.dart';
 import 'package:bootcamp_project/screens/auth/register_page.dart';
@@ -12,6 +15,7 @@ import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart ';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,6 +25,7 @@ import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
 
 class HomePage extends StatelessWidget {
   User user;
+
   HomePage(this.user);
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
@@ -95,6 +100,7 @@ class HomePage extends StatelessWidget {
                     itemBuilder: (context, index) {
                       BlogModel blog =
                           BlogModel.fromJson(snapShot.data.docs[index]);
+
                       return Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: Card(
@@ -170,13 +176,17 @@ class HomePage extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(
-              color: ColorConstants.lightblue,
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(30),
+                bottomRight: Radius.circular(30),
+              ),
+              color: ColorConstants.secondaryColor,
             ),
             child: Center(
-              child: Text('Welcome to Senfonia',
+              child: Text('Welcome to Senfonia ${user.email}',
                   style: GoogleFonts.poppins(
-                      fontSize: 20, color: ColorConstants.darkblue)),
+                      fontSize: 20, color: ColorConstants.white)),
             ),
           ),
           ListTile(
@@ -263,6 +273,47 @@ class HomePage extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
+          ListTile(
+            title: TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BlogIntro(),
+
+                    // BlogPage(this.user)
+                  ),
+                );
+              },
+              child: Text("Blog Intro "),
+            ),
+            onTap: () {
+              // Update the state of the app
+              // ...
+              // Then close the drawer
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProfilePage(),
+
+                    // BlogPage(this.user)
+                  ),
+                );
+              },
+              child: Text("User test"),
+            ),
+            onTap: () {
+              // Update the state of the app
+              // ...
+              // Then close the drawer
+            },
+          ),
           TextButton.icon(
             onPressed: () async {
               await AuthService().signOut();
@@ -276,7 +327,7 @@ class HomePage extends StatelessWidget {
               );
             },
             icon: const Icon(Icons.logout),
-            label: const Text("Sign Out"),
+            label: const Text("Çıkış Yap"),
             style: TextButton.styleFrom(primary: Colors.black),
           ),
         ],
