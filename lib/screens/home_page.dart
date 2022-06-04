@@ -11,6 +11,7 @@ import 'package:bootcamp_project/screens/blog/blog_intro.dart';
 import 'package:bootcamp_project/screens/blog/blog_page.dart';
 import 'package:bootcamp_project/screens/blog/edit_blog.dart';
 import 'package:bootcamp_project/screens/auth/register_page.dart';
+import 'package:bootcamp_project/screens/obstacles/obstacles.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -36,39 +37,6 @@ class HomePage extends StatelessWidget {
     final user = FirebaseAuth.instance.currentUser;
     bool keyboardIsOpen = MediaQuery.of(context).viewInsets.bottom != 0;
     return Scaffold(
-      // drawer: Drawer(
-      //   semanticLabel: 'Drawer',
-      //   // backgroundColor: ColorConstants.lightblue,
-      //   // Add a ListView to the drawer. This ensures the user can scroll
-      //   // through the options in the drawer if there isn't enough vertical
-      //   // space to fit everything.
-      //   child: ListView(
-      //     // Important: Remove any padding from the ListView.
-      //     padding: EdgeInsets.zero,
-      //     children: [
-      //       const DrawerHeader(
-      //         decoration: BoxDecoration(
-      //           color: Colors.blue,
-      //         ),
-      //         child: Text('Drawer Header'),
-      //       ),
-      //       ListTile(
-      //         title: const Text('Item 1'),
-      //         onTap: () {
-      //           // Update the state of the app.
-      //           // ...
-      //         },
-      //       ),
-      //       ListTile(
-      //         title: const Text('Item 2'),
-      //         onTap: () {
-      //           // Update the state of the app.
-      //           // ...
-      //         },
-      //       ),
-      //     ],
-      //   ),
-      // ),
       drawer: buildDrawer(context),
       appBar: buildAppBar(
         context,
@@ -145,7 +113,6 @@ class HomePage extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           }),
-
       floatingActionButton: Visibility(
         visible: !keyboardIsOpen,
         child: Padding(
@@ -184,7 +151,7 @@ class HomePage extends StatelessWidget {
               color: ColorConstants.secondaryColor,
             ),
             child: Center(
-              child: Text('Welcome to Senfonia ${user.email}',
+              child: Text('Welcome to Senfonia ',
                   style: GoogleFonts.poppins(
                       fontSize: 20, color: ColorConstants.white)),
             ),
@@ -300,7 +267,27 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ProfilePage(),
+                    builder: (context) => ObstaclesScreen(),
+
+                    // BlogPage(this.user)
+                  ),
+                );
+              },
+              child: Text("User test"),
+            ),
+            onTap: () {
+              // Update the state of the app
+              // ...
+              // Then close the drawer
+            },
+          ),
+          ListTile(
+            title: TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProfilePage(this.user),
 
                     // BlogPage(this.user)
                   ),

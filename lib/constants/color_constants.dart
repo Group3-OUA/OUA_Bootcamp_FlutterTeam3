@@ -12,4 +12,5 @@ class ColorConstants {
   static const Color white = Color(0xFFFFFFFF);
   static const Color purple = Color(0xFF8E97FD);
   static const Color categorypurple = Color(0xFFCFB1F9);
+  static const Color cardblue = Color(0xFFF3F7FB);
 }

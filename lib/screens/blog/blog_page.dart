@@ -1,5 +1,7 @@
 import 'package:bootcamp_project/constants/color_constants.dart';
+import 'package:bootcamp_project/constants/padding_constant.dart';
 import 'package:bootcamp_project/models/blog.dart';
+import 'package:bootcamp_project/models/users.dart';
 import 'package:bootcamp_project/screens/about_us.dart';
 import 'package:bootcamp_project/screens/blog/add_blog.dart';
 import 'package:bootcamp_project/screens/blog/blog_detail.dart';
@@ -18,9 +20,12 @@ class BlogPage extends StatelessWidget {
   User user;
   BlogPage(this.user);
   FirebaseFirestore firestore = FirebaseFirestore.instance;
+  FirebaseAuth auth = FirebaseAuth.instance;
 
   @override
   Widget build(BuildContext context) {
+    var userID = auth.currentUser!.uid.toString();
+
     final user = FirebaseAuth.instance.currentUser;
     bool keyboardIsOpen = MediaQuery.of(context).viewInsets.bottom != 0;
     return Scaffold(
@@ -42,10 +47,7 @@ class BlogPage extends StatelessWidget {
           Colors.transparent,
         ),
         body: StreamBuilder(
-            stream: FirebaseFirestore.instance
-                .collection('notes')
-                .where('userId', isEqualTo: user?.uid)
-                .snapshots(),
+            stream: FirebaseFirestore.instance.collection('notes').snapshots(),
             builder: (context, AsyncSnapshot snapShot) {
               if (snapShot.hasData) {
                 if (snapShot.data.docs.length > 0) {
@@ -56,38 +58,111 @@ class BlogPage extends StatelessWidget {
                             BlogModel.fromJson(snapShot.data.docs[index]);
                         return Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15.0),
-                            ),
-                            color: ColorConstants.lightgrey,
-                            elevation: 3,
-                            margin: EdgeInsets.all(15),
-                            child: ListTile(
-                              leading: CircleAvatar(
-                                backgroundImage: NetworkImage(
-                                    "https://picsum.photos/250?image=9"),
+                          child: Column(
+                            children: [
+                              Column(
+                                children: [
+                                  Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                    ),
+                                    color: ColorConstants.lightgrey,
+                                    elevation: 3,
+                                    margin: EdgeInsets.all(15),
+                                    child: ListTile(
+                                      leading: CircleAvatar(
+                                        backgroundImage: NetworkImage(
+                                            "https://picsum.photos/250?image=9"),
+                                      ),
+                                      contentPadding: EdgeInsets.symmetric(
+                                          horizontal: 10, vertical: 5),
+                                      title: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          StreamBuilder(
+                                            stream: FirebaseFirestore.instance
+                                                .collection('Users')
+                                                .where('UserID',
+                                                    isEqualTo: blog.userId)
+                                                .snapshots(),
+                                            builder: (context,
+                                                AsyncSnapshot snapshot) {
+                                              if (snapshot.hasData) {
+                                                UserModel userModel =
+                                                    UserModel.fromJson(
+                                                        snapshot.data.docs[0]);
+                                                return Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      children: [
+                                                        Text(
+                                                          "Yazar - ${userModel.fullName} ",
+                                                          style: GoogleFonts
+                                                              .poppins(
+                                                            fontSize: 14,
+                                                            color:
+                                                                ColorConstants
+                                                                    .black,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
+                                                          ),
+                                                        ),
+                                                        Text(snapShot
+                                                            .data.docs.length
+                                                            .toString())
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 15,
+                                                    ),
+                                                  ],
+                                                );
+                                              } else {
+                                                return Center(
+                                                  child: Text("No Data"),
+                                                );
+                                              }
+                                            },
+                                          ),
+                                          Text(
+                                            blog.title,
+                                            style: GoogleFonts.poppins(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                          SizedBox(
+                                            height: 10,
+                                          ),
+                                        ],
+                                      ),
+                                      subtitle: Text(
+                                        blog.description,
+                                        overflow: TextOverflow.ellipsis,
+                                        maxLines: 3,
+                                        style: GoogleFonts.poppins(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    EditBlogPage(blog)));
+                                      },
+                                    ),
+                                  ),
+                                ],
                               ),
-                              contentPadding: EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 5),
-                              title: Text(
-                                blog.title,
-                                style: GoogleFonts.poppins(
-                                    fontSize: 15, fontWeight: FontWeight.bold),
-                              ),
-                              subtitle: Text(
-                                blog.description,
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 2,
-                                style: GoogleFonts.poppins(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal),
-                              ),
-                              onTap: () {
-                                Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => EditBlogPage(blog)));
-                              },
-                            ),
+                            ],
                           ),
                         );
                       });

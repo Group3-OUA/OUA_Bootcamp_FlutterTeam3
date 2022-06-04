@@ -41,6 +41,7 @@ class AboutUsPage extends StatelessWidget {
                   fontSize: 15, color: ColorConstants.black),
             ),
             SizedBox(height: 20),
+            Divider(thickness: 0.2, color: ColorConstants.darkblue),
             Text(
               "İletişim",
               style: GoogleFonts.poppins(

@@ -35,7 +35,7 @@ class AdvertViewPage extends StatelessWidget {
       body: StreamBuilder(
           stream: FirebaseFirestore.instance
               .collection('adverts')
-              .where('UserId')
+
               // .where('userId', isEqualTo: user?.uid)
               .snapshots(),
           builder: (context, AsyncSnapshot snapShot) {
