@@ -42,7 +42,8 @@ Takım Core
 
 ## Product Backlog URL
 
-[Miro Backlog Board](https://miro.com/app/board/uXjVO4RfNfg=/)
+[Miro Backlog Board 1. ve 2. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
+[Miro Backlog Board 3. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
 
 ---
 
@@ -161,22 +162,22 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757490/Uygulama.Goruntuleri.docx)
+![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8846735/Uygulama.Goruntuleri.3.docx)
 
 
 - **Sprint Review**: 
   -Sprint Review Katılımcıları 
-  - Mehmet Mert Han
   - Aleyna Arslanoğlu
   - Rümeysa Çelik
   - Yusuf Vural
 
   - Alınan Kararlar
- Bu sprintte bazı gerekçelerden ötürü planladığımız kapsamı gerçekleştiremedik bundan dolayı risk planımızı aktifleştirdik. Uygulamanın kapsamından ses paylaşma kaldırıldı, onun yerine insanlara blog sayesinde bilgi paylaşma ve bilgi edinme özelliğine yoğunlaştık.  
+ Bu sprintte bazı gerekçelerden ötürü planladığımız kapsamı gerçekleştiremedik bundan dolayı risk planımızı aktifleştirdik. Uygulamanın kapsamından ses paylaşma kaldırıldı, onun yerine insanlara blog sayesinde bilgi paylaşma ve bilgi edinme özelliğine yoğunlaştık. Şu anda ilan ve blog paylaşma özelliği çalışmaktadır.
 
 - **Sprint Retrospective:**
   - Verilen görevlerin süresi daha kısa tutulmalı ve kişi görevi zamanında tamamlamıyorsa bu görev ondan alınmalıydı
-  - 
+  - Kişilerin bilgileri daha iyi analiz edilerek süreç ona göre şekillendirilmeliydi.
+  -Ekip üyelerinin bir kısmı görevlerini daha çok benimsemeliydi
 
 -**Diğer Notlar**:
 - N/A
