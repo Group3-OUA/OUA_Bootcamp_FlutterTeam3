@@ -161,8 +161,8 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 - **Daily Scrum**: Günlük scrum toplantıları yapılmıştır, bu toplantıları eskisi gibi telefon yoluyla, dc yoluyla ya da whatsapp yoluyla gerçekleştirdik. 
  Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: 
 Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca belirtilmiştir.
-[2. Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757505/2.sprint.daily.scrum.ssleri.docx)
 
+[3. Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8847994/Bel1.1.docx)
 
 - **Sprint board update**: Sprint board screenshotları:  Backlog 1,2 ve 3 linkteki dosyada mevcuttur.
 ![Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757473/backlog.update.docx)
