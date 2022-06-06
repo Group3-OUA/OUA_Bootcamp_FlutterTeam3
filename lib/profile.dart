@@ -236,17 +236,18 @@ class ProfilePage extends StatelessWidget {
     return CircleAvatar(
       radius: profileHeight / 4,
       backgroundColor: Colors.grey.shade800,
-      backgroundImage: NetworkImage(
-        "https://picsum.photos/250?image=9",
-      ),
+      backgroundImage: Image.asset(
+        'assets/icons/avatar.png',
+        fit: BoxFit.cover,
+      ).image,
     );
   }
 
   Container buildCoverImage() {
     return Container(
       color: Colors.grey,
-      child: Image.network(
-        'https://picsum.photos/250?image=9',
+      child: Image.asset(
+        'assets/icons/avatar.png',
         width: double.infinity,
         height: coverHeight,
         fit: BoxFit.cover,

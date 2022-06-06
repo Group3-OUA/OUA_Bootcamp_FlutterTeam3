@@ -11,6 +11,8 @@ import 'package:bootcamp_project/screens/blog/blog_intro.dart';
 import 'package:bootcamp_project/screens/blog/blog_page.dart';
 import 'package:bootcamp_project/screens/blog/edit_blog.dart';
 import 'package:bootcamp_project/screens/auth/register_page.dart';
+import 'package:bootcamp_project/screens/obstacles/find_mentor.dart';
+import 'package:bootcamp_project/screens/obstacles/find_workshop.dart';
 import 'package:bootcamp_project/screens/obstacles/obstacles.dart';
 import 'package:bootcamp_project/services/auth_service.dart';
 import 'package:bootcamp_project/widgets/build_AppBar.dart';
@@ -55,64 +57,192 @@ class HomePage extends StatelessWidget {
         ),
         Colors.transparent,
       ),
-      body: StreamBuilder(
-          stream: FirebaseFirestore.instance
-              .collection('notes')
-              .where('userId', isEqualTo: user?.uid)
-              .snapshots(),
-          builder: (context, AsyncSnapshot snapShot) {
-            if (snapShot.hasData) {
-              if (snapShot.data.docs.length > 0) {
-                return ListView.builder(
-                    itemCount: snapShot.data.docs.length,
-                    itemBuilder: (context, index) {
-                      BlogModel blog =
-                          BlogModel.fromJson(snapShot.data.docs[index]);
 
-                      return Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15.0),
-                          ),
-                          color: ColorConstants.lightgrey,
-                          elevation: 3,
-                          margin: EdgeInsets.all(15),
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  "https://picsum.photos/250?image=6"),
-                            ),
-                            contentPadding: EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 5),
-                            title: Text(
-                              blog.title,
-                              style: GoogleFonts.poppins(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
-                            ),
-                            subtitle: Text(
-                              blog.description,
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 2,
-                              style: GoogleFonts.poppins(
-                                  fontSize: 14, fontWeight: FontWeight.normal),
-                            ),
-                            onTap: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => BlogDetail(blog)));
-                            },
-                          ),
-                        ),
-                      );
-                    });
-              } else {
-                return Center(child: Text("No data found"));
-              }
-            }
-            return Center(
-              child: CircularProgressIndicator(),
-            );
-          }),
+      body: Center(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Blog Paylaş! İlan Paylaş! Engelleri Aş!",
+                    textAlign: TextAlign.start,
+                    style: GoogleFonts.poppins(
+                      fontSize: 19,
+                      fontWeight: FontWeight.w500,
+                      color: ColorConstants.black,
+                    ),
+                  ),
+                  Text(
+                    "Birlikte Yapacağımız Müzik Atolyeleri ile\n Engelleri Birlikte Aşalım ",
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.poppins(
+                      fontSize: 15,
+                      fontWeight: FontWeight.normal,
+                      color: ColorConstants.mainblue,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BlogPage(this.user),
+                  ),
+                );
+              },
+              child: Container(
+                decoration: const BoxDecoration(
+                  color: ColorConstants.categorypurple,
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.2,
+                child: Center(
+                    child: Text(
+                  "Blogları Gör",
+                  style: GoogleFonts.poppins(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    color: ColorConstants.white,
+                  ),
+                )),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FindMentor(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      color: ColorConstants.secondaryColor,
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                    ),
+                    width: MediaQuery.of(context).size.width * 0.43,
+                    height: MediaQuery.of(context).size.height * 0.3,
+                    child: Center(
+                        child: Text(
+                      "Mentor Bul",
+                      style: GoogleFonts.poppins(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: ColorConstants.white,
+                      ),
+                    )),
+                  ),
+                ),
+                SizedBox(
+                  width: 15,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FindWorkshop(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      color: ColorConstants.categorypurple,
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                    ),
+                    width: MediaQuery.of(context).size.width * 0.43,
+                    height: MediaQuery.of(context).size.height * 0.3,
+                    child: Center(
+                        child: Text(
+                      "Atolye Bul",
+                      style: GoogleFonts.poppins(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: ColorConstants.white,
+                      ),
+                    )),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      // body: StreamBuilder(
+      //     stream: FirebaseFirestore.instance
+      //         .collection('notes')
+      //         .where('userId', isEqualTo: user?.uid)
+      //         .snapshots(),
+      //     builder: (context, AsyncSnapshot snapShot) {
+      //       if (snapShot.hasData) {
+      //         if (snapShot.data.docs.length > 0) {
+      //           return ListView.builder(
+      //               itemCount: snapShot.data.docs.length,
+      //               itemBuilder: (context, index) {
+      //                 BlogModel blog =
+      //                     BlogModel.fromJson(snapShot.data.docs[index]);
+
+      //                 return Padding(
+      //                   padding: const EdgeInsets.symmetric(horizontal: 10),
+      //                   child: Card(
+      //                     shape: RoundedRectangleBorder(
+      //                       borderRadius: BorderRadius.circular(15.0),
+      //                     ),
+      //                     color: ColorConstants.lightgrey,
+      //                     elevation: 3,
+      //                     margin: EdgeInsets.all(15),
+      //                     child: ListTile(
+      //                       leading: CircleAvatar(
+      //                         backgroundImage: NetworkImage(
+      //                             "https://picsum.photos/250?image=6"),
+      //                       ),
+      //                       contentPadding: EdgeInsets.symmetric(
+      //                           horizontal: 10, vertical: 5),
+      //                       title: Text(
+      //                         blog.title,
+      //                         style: GoogleFonts.poppins(
+      //                             fontSize: 15, fontWeight: FontWeight.bold),
+      //                       ),
+      //                       subtitle: Text(
+      //                         blog.description,
+      //                         overflow: TextOverflow.ellipsis,
+      //                         maxLines: 2,
+      //                         style: GoogleFonts.poppins(
+      //                             fontSize: 14, fontWeight: FontWeight.normal),
+      //                       ),
+      //                       onTap: () {
+      //                         Navigator.of(context).push(MaterialPageRoute(
+      //                             builder: (context) => BlogDetail(blog)));
+      //                       },
+      //                     ),
+      //                   ),
+      //                 );
+      //               });
+      //         } else {
+      //           return Center(child: Text("No data found"));
+      //         }
+      //       }
+      //       return Center(
+      //         child: CircularProgressIndicator(),
+      //       );
+      //     }),
       floatingActionButton: Visibility(
         visible: !keyboardIsOpen,
         child: Padding(

@@ -70,8 +70,10 @@ class BlogPage extends StatelessWidget {
                                     margin: EdgeInsets.all(15),
                                     child: ListTile(
                                       leading: CircleAvatar(
-                                        backgroundImage: NetworkImage(
-                                            "https://picsum.photos/250?image=9"),
+                                        backgroundImage: Image.asset(
+                                          'assets/icons/avatar.png',
+                                          fit: BoxFit.cover,
+                                        ).image,
                                       ),
                                       contentPadding: EdgeInsets.symmetric(
                                           horizontal: 10, vertical: 5),
