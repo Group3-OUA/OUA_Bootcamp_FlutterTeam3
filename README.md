@@ -16,11 +16,14 @@ Takım Core
 
 ## Ürün İsmi
 
+
+![Senfonia  (4)](https://user-images.githubusercontent.com/104423960/172196239-b7c25a4a-6ef3-4ac1-a69d-b509738686e0.png)
+
 --Senfonia--
 
 ## Ürün Açıklaması
 
-- Senfonia, müzik tutkunlarının aynı çatıda buluşmasını sağlayan bir mobil uygulamadır. Senfonia aracılığıyla kullanıcılar  müzik türlerinde içerik üretebilir, bu içerikleri paylaşabilir ya da içerik üreticilerinin çalışmalarını inceleyerek yaratıcılıklarını bir üst seviyeye çıkarabilirler. Senfonia müzik tutkunlarının yanı sıra daha geniş bir kitleye de ilan özelliği sayesinde hitap ediyor. Hafta sonu arkadaşlarınızla yapacağınız mangal partisini Senfonia’de bulduğunuz bir müzisyenle daha keyifli hale getirebilirsiniz! Üstelik Senfonia nin avantajları bunlarla sınırlı kalmıyor. Hayalini kurduğun grup arkadaşlarını , hep çalmak isterdim dediğin enstrümanın eğitmenini, bunun ikinci eli olsa iyi olurdu dediğin araç gereçleri kısaca müziği ve müzikli her şeyi Senfonia ile bulabilirsin! 
+- Senfonia, müzik tutkunlarının aynı çatıda buluşmasını sağlayan bir mobil uygulamadır. Senfonia aracılığıyla kullanıcılar  müzik türlerinde içerik üretebilir, bu içerikleri paylaşabilir ya da içerik üreticilerinin çalışmalarını inceleyerek yaratıcılıklarını bir üst seviyeye çıkarabilirler. Senfonia müzik tutkunlarının yanı sıra daha geniş bir kitleye de ilan özelliği sayesinde hitap ediyor. Hafta sonu arkadaşlarınızla yapacağınız mangal partisini Senfonia’de bulduğunuz bir müzisyenle daha keyifli hale getirebilirsiniz! Üstelik Senfonia nin avantajları bunlarla sınırlı kalmıyor. Hayalini kurduğun grup arkadaşlarını , hep çalmak isterdim dediğin enstrümanın eğitmenini, bunun ikinci eli olsa iyi olurdu dediğin araç gereçleri kısaca müziği ve müzikli her şeyi Senfonia ile bulabilirsin! Bunlarla beraber dezavantajlı engeli olan arkadaşlarımızı da müzikle buluşturmak istiyoruz. Uygulamamızda bulunan "Engelleri Aş" kısmı ile şehrinde düzenlenen engelli arkadaşlarımıza özel müzik atolyelerni bulabilisin. Bu sayede o arkadaşlarımızı da müziğin tılsımına davet ediyor, bu alana yakın olmaları için elimizden geleni yapıyoruz. Aynı zamanda onlar için seçilen gönüllü mentorlerle konuşma kendilerini keşfetme yolculuklarında ellerinden tutmak istiyoruz. Mentorlere ve müzik atolyelerine çok yakında ulaşabileceksin. İlerleyen zamanda gelecek yeni özelliklerimiz için bizi takipte kalın. 
 
 ## Ürün Özellikleri
 
@@ -33,13 +36,14 @@ Takım Core
 ## Hedef Kitle
 
 - Spotify kullanıcıları 
-- Smule Kullanıcıları 
-- Müzikseverler
+- Müzikseverler, Enstrünman çalanlar
+- Müzikle ilgilenmesi için özel ilgiye ihtİyaç duyan engele sahip bireyler.
 - 18 - 40 yaş arası kullanıcılar
 
 ## Product Backlog URL
 
-[Miro Backlog Board](https://miro.com/app/board/uXjVO4RfNfg=/)
+ - [Miro Backlog Board 1. ve 2. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
+ - [Miro Backlog Board 3. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
 
 ---
 
@@ -55,11 +59,11 @@ Takım Core
 
 
 - **Daily Scrum**: Daily Scrum toplantılarının WhatsApp ve Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: 
-[Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8645886/DailyScrumSprint1_Team3.docx)
+[Sprint 3 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8845602/Bel1.1.docx)
 
 
 - **Sprint board update**: Sprint board screenshotları:  Backlog 1,2 ve 3 linkteki dosyada mevcuttur.
-![Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8645905/Backlog.1.2.3.docx)
+[Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8845612/kanbann.ss.docx)
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
@@ -135,3 +139,46 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 
 -**Diğer Notlar**:
 - N/A
+
+# Sprint 3
+
+- **Sprint Notları**: User Storyler için belirlemiş olduğumuz kullanıcı tipleri, ve 2.sprinte ait storyler miro boardımızda belirtilmiştir.  
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 68 Puan
+
+- **Puan tamamlama mantığı**: Sprint içinde tamamlanması gereken tahmini puan: 272 dir. Puan tamamlama mantığı; Toplamda proje boyunca tamamlanması gereken 540 puanlık backlogun 100 puanını ilk sprintte tamamlamıştık. Geriye kalan 440 puanın 240sini 2.sprintte tamamlamayı hedefledik ve  
+
+- **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
+
+
+- **Daily Scrum**: Günlük scrum toplantıları yapılmıştır, bu toplantıları eskisi gibi telefon yoluyla, dc yoluyla ya da whatsapp yoluyla gerçekleştirdik. 
+ Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: 
+Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca belirtilmiştir.
+[2. Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757505/2.sprint.daily.scrum.ssleri.docx)
+
+
+- **Sprint board update**: Sprint board screenshotları:  Backlog 1,2 ve 3 linkteki dosyada mevcuttur.
+![Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757473/backlog.update.docx)
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8846735/Uygulama.Goruntuleri.3.docx)
+
+
+- **Sprint Review**: 
+  -Sprint Review Katılımcıları 
+  - Aleyna Arslanoğlu
+  - Rümeysa Çelik
+  - Yusuf Vural
+
+  - Alınan Kararlar
+ Bu sprintte bazı gerekçelerden ötürü planladığımız kapsamı gerçekleştiremedik bundan dolayı risk planımızı aktifleştirdik. Uygulamanın kapsamından ses paylaşma kaldırıldı, onun yerine insanlara blog sayesinde bilgi paylaşma ve bilgi edinme özelliğine yoğunlaştık. Şu anda ilan ve blog paylaşma özelliği çalışmaktadır.
+
+- **Sprint Retrospective:**
+  - Verilen görevlerin süresi daha kısa tutulmalı ve kişi görevi zamanında tamamlamıyorsa bu görev ondan alınmalıydı
+  - Kişilerin bilgileri daha iyi analiz edilerek süreç ona göre şekillendirilmeliydi.
+  -Ekip üyelerinin bir kısmı görevlerini daha çok benimsemeliydi
+
+-**Diğer Notlar**:
+- N/A
+
