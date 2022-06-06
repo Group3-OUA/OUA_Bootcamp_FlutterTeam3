@@ -165,7 +165,7 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 [3. Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8847994/Bel1.1.docx)
 
 - **Sprint board update**: Sprint board screenshotları:  Backlog 1,2 ve 3 linkteki dosyada mevcuttur.
-![Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8757473/backlog.update.docx)
+![Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8847997/kanbann.ss.docx)
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
