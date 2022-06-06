@@ -42,8 +42,8 @@ Takım Core
 
 ## Product Backlog URL
 
-[Miro Backlog Board 1. ve 2. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
-[Miro Backlog Board 3. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
+ - [Miro Backlog Board 1. ve 2. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
+ - [Miro Backlog Board 3. Sprint](https://miro.com/app/board/uXjVO4RfNfg=/)
 
 ---
 
