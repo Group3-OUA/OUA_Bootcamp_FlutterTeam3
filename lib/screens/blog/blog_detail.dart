@@ -85,13 +85,15 @@ class BlogDetail extends StatelessWidget {
             thickness: 1,
             height: 32,
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
-            child: Text('${blog.description}',
-                style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    color: ColorConstants.darkblue,
-                    fontWeight: FontWeight.w500)),
+          SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Text('${blog.description}',
+                  style: GoogleFonts.poppins(
+                      fontSize: 15,
+                      color: ColorConstants.darkblue,
+                      fontWeight: FontWeight.w500)),
+            ),
           ),
           Divider(
             color: ColorConstants.darkblue.withOpacity(0.1),

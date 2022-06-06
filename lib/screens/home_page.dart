@@ -151,9 +151,16 @@ class HomePage extends StatelessWidget {
               color: ColorConstants.secondaryColor,
             ),
             child: Center(
-              child: Text('Welcome to Senfonia ',
-                  style: GoogleFonts.poppins(
-                      fontSize: 20, color: ColorConstants.white)),
+              child: Column(
+                children: [
+                  Image.asset(
+                    "assets/icons/senfonia.png",
+                  ),
+                  // Text('Welcome to Senfonia ',
+                  //     style: GoogleFonts.poppins(
+                  //         fontSize: 20, color: ColorConstants.white)),
+                ],
+              ),
             ),
           ),
           ListTile(
@@ -273,7 +280,7 @@ class HomePage extends StatelessWidget {
                   ),
                 );
               },
-              child: Text("User test"),
+              child: Text("Engelleri Aş"),
             ),
             onTap: () {
               // Update the state of the app
@@ -293,7 +300,7 @@ class HomePage extends StatelessWidget {
                   ),
                 );
               },
-              child: Text("User test"),
+              child: Text("Profil"),
             ),
             onTap: () {
               // Update the state of the app

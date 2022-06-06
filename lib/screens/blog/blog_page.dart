@@ -35,12 +35,11 @@ class BlogPage extends StatelessWidget {
           Builder(
             builder: (context) {
               return IconButton(
-                icon: SvgPicture.asset("assets/icons/Drawer.svg"),
+                icon: Icon(Icons.arrow_back_ios_sharp),
                 onPressed: () {
-                  Scaffold.of(context).openDrawer();
+                  Navigator.pop(context);
                   // print("open drawer");
                 },
-                tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
               );
             },
           ),

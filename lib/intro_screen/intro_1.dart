@@ -8,7 +8,7 @@ class IntroPage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String url = "assets/images/intro2.png";
+    String url = "assets/icons/Senfonia1.png";
     return Scaffold(
       backgroundColor: ColorConstants.white,
       body: Column(
