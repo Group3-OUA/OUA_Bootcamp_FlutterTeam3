@@ -21,6 +21,13 @@ Takım Core
 
 --Senfonia--
 
+## Test Kullanıcısı
+
+Test Kullanıcısı Bilgileri
+ - email: selman@gmail.com 
+ - şifre: 123456
+
+
 ## Ürün Açıklaması
 
 - Senfonia, müzik tutkunlarının aynı çatıda buluşmasını sağlayan bir mobil uygulamadır. Senfonia aracılığıyla kullanıcılar  müzik türlerinde içerik üretebilir, bu içerikleri paylaşabilir ya da içerik üreticilerinin çalışmalarını inceleyerek yaratıcılıklarını bir üst seviyeye çıkarabilirler. Senfonia müzik tutkunlarının yanı sıra daha geniş bir kitleye de ilan özelliği sayesinde hitap ediyor. Hafta sonu arkadaşlarınızla yapacağınız mangal partisini Senfonia’de bulduğunuz bir müzisyenle daha keyifli hale getirebilirsiniz! Üstelik Senfonia nin avantajları bunlarla sınırlı kalmıyor. Hayalini kurduğun grup arkadaşlarını , hep çalmak isterdim dediğin enstrümanın eğitmenini, bunun ikinci eli olsa iyi olurdu dediğin araç gereçleri kısaca müziği ve müzikli her şeyi Senfonia ile bulabilirsin! Bunlarla beraber dezavantajlı engeli olan arkadaşlarımızı da müzikle buluşturmak istiyoruz. Uygulamamızda bulunan "Engelleri Aş" kısmı ile şehrinde düzenlenen engelli arkadaşlarımıza özel müzik atolyelerni bulabilisin. Bu sayede o arkadaşlarımızı da müziğin tılsımına davet ediyor, bu alana yakın olmaları için elimizden geleni yapıyoruz. Aynı zamanda onlar için seçilen gönüllü mentorlerle konuşma kendilerini keşfetme yolculuklarında ellerinden tutmak istiyoruz. Mentorlere ve müzik atolyelerine çok yakında ulaşabileceksin. İlerleyen zamanda gelecek yeni özelliklerimiz için bizi takipte kalın. 
