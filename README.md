@@ -16,6 +16,9 @@ Takım Core
 
 ## Ürün İsmi
 
+
+![Senfonia  (4)](https://user-images.githubusercontent.com/104423960/172196239-b7c25a4a-6ef3-4ac1-a69d-b509738686e0.png)
+
 --Senfonia--
 
 ## Ürün Açıklaması
@@ -55,11 +58,11 @@ Takım Core
 
 
 - **Daily Scrum**: Daily Scrum toplantılarının WhatsApp ve Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: 
-[Sprint 1 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8645886/DailyScrumSprint1_Team3.docx)
+[Sprint 3 Daily Scrum Chats](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8845602/Bel1.1.docx)
 
 
 - **Sprint board update**: Sprint board screenshotları:  Backlog 1,2 ve 3 linkteki dosyada mevcuttur.
-![Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8645905/Backlog.1.2.3.docx)
+[Backlog 1 2 3](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8845612/kanbann.ss.docx)
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
@@ -140,9 +143,9 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 
 - **Sprint Notları**: User Storyler için belirlemiş olduğumuz kullanıcı tipleri, ve 2.sprinte ait storyler miro boardımızda belirtilmiştir.  
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 240 Puan
+- **Sprint içinde tamamlanması tahmin edilen puan**: 68 Puan
 
-- **Puan tamamlama mantığı**: Sprint içinde tamamlanması gereken tahmini puan: 240 dir. Puan tamamlama mantığı; Toplamda proje boyunca tamamlanması gereken 540 puanlık backlogun 100 puanını ilk sprintte tamamlamıştık. Geriye kalan 440 puanın 240sini 2.sprintte tamamlamayı hedefledik.  
+- **Puan tamamlama mantığı**: Sprint içinde tamamlanması gereken tahmini puan: 272 dir. Puan tamamlama mantığı; Toplamda proje boyunca tamamlanması gereken 540 puanlık backlogun 100 puanını ilk sprintte tamamlamıştık. Geriye kalan 440 puanın 240sini 2.sprintte tamamlamayı hedefledik ve  
 
 - **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
 
@@ -172,11 +175,8 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
  Bu sprintte bazı gerekçelerden ötürü planladığımız kapsamı gerçekleştiremedik bundan dolayı risk planımızı aktifleştirdik. Uygulamanın kapsamından ses paylaşma kaldırıldı, onun yerine insanlara blog sayesinde bilgi paylaşma ve bilgi edinme özelliğine yoğunlaştık.  
 
 - **Sprint Retrospective:**
-  - Her verilen backlog için olası riskler atanmalı ve bu risklere ait çözüm planları oluşturulmalı.  
-  - İş yetiştirme süresi azaltılmalı, geriye kalan süre iyi değerlendirilmeli. 
-  - User storylerin karmaşıklık seviyesi arttırılmalı. 
-  - Test kısmına daha çok ağırlık verilmeli.
-  - Mevcutta var olan kodlar temizlenmeli, kod karmaşalığı ortadan kaldırılıp clean kod tekniklerine uygun olarak ilerlenilmeli.
+  - Verilen görevlerin süresi daha kısa tutulmalı ve kişi görevi zamanında tamamlamıyorsa bu görev ondan alınmalıydı
+  - 
 
 -**Diğer Notlar**:
 - N/A
