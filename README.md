@@ -169,8 +169,8 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8846735/Uygulama.Goruntuleri.3.docx)
 
+![Ürün Durumu Görselleri](https://github.com/Group3-OUA/OUA_Bootcamp_FlutterTeam3/files/8847983/Uygulama.Goruntuleri.4.docx)
 
 - **Sprint Review**: 
   -Sprint Review Katılımcıları 
