@@ -27,7 +27,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
 
 class HomePage extends StatelessWidget {
-  User user;
+  User? user;
 
   HomePage(this.user);
   FirebaseFirestore firestore = FirebaseFirestore.instance;
@@ -95,7 +95,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => BlogPage(this.user),
+                    builder: (context) => BlogPage(this.user!),
                   ),
                 );
               },
@@ -317,14 +317,21 @@ class HomePage extends StatelessWidget {
           ListTile(
             title: TextButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => BlogPage(this.user),
-
-                    // BlogPage(this.user)
-                  ),
-                );
+                if (this.user != null) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BlogPage(this.user!),
+                    ),
+                  );
+                } else {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RegisterPage(),
+                    ),
+                  );
+                }
               },
               child: Text("Blogları Görüntüle"),
             ),
@@ -341,7 +348,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AddAdvertPage(this.user),
+                    builder: (context) => AddAdvertPage(this.user!),
 
                     // BlogPage(this.user)
                   ),
@@ -362,7 +369,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AdvertViewPage(this.user),
+                    builder: (context) => AdvertViewPage(this.user!),
 
                     // BlogPage(this.user)
                   ),
@@ -424,7 +431,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ProfilePage(this.user),
+                    builder: (context) => ProfilePage(this.user!),
 
                     // BlogPage(this.user)
                   ),

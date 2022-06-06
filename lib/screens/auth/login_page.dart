@@ -142,6 +142,17 @@ class _LoginPageState extends State<LoginPage> {
                     'Are you not registered? Register here',
                     style: TextStyle(color: ColorConstants.secondaryColor),
                   )),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return HomePage(null);
+                    }));
+                  },
+                  child: const Text(
+                    'Continue Without A Member',
+                    style: TextStyle(color: ColorConstants.secondaryColor),
+                  )),
             ],
           )),
     );
