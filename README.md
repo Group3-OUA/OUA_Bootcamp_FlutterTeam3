@@ -149,11 +149,11 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 
 # Sprint 3
 
-- **Sprint Notları**: User Storyler için belirlemiş olduğumuz kullanıcı tipleri, ve 2.sprinte ait storyler miro boardımızda belirtilmiştir.  
+- **Sprint Notları**: User Storyler için belirlemiş olduğumuz kullanıcı tipleri, ve 3.sprinte ait storyler miro boardımızda belirtilmiştir.  
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 68 Puan
 
-- **Puan tamamlama mantığı**: Sprint içinde tamamlanması gereken tahmini puan: 272 dir. Puan tamamlama mantığı; Toplamda proje boyunca tamamlanması gereken 540 puanlık backlogun 100 puanını ilk sprintte tamamlamıştık. Geriye kalan 440 puanın 240sini 2.sprintte tamamlamayı hedefledik ve  
+- **Puan tamamlama mantığı**: Sprint içinde tamamlanması gereken tahmini puan: 272 dir. Puan tamamlama mantığı; Toplamda proje boyunca tamamlanması gereken 540 puanlık backlogun 100 puanını ilk sprintte tamamlamıştık. Geriye kalan 440 puanın 240sini 2.sprintte tamamlamayı hedefledik. 3. sprintte ise hedeflediğimiz puanın 68'ini tamamlayabildik. Miro 3. sprint boardımızda detaylıca belirtilmiştir. 
 
 - **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
 
@@ -184,7 +184,8 @@ Daily scrum notlarımız gün gün olmak üzere miro boardımızda da ayrıca be
 - **Sprint Retrospective:**
   - Verilen görevlerin süresi daha kısa tutulmalı ve kişi görevi zamanında tamamlamıyorsa bu görev ondan alınmalıydı
   - Kişilerin bilgileri daha iyi analiz edilerek süreç ona göre şekillendirilmeliydi.
-  -Ekip üyelerinin bir kısmı görevlerini daha çok benimsemeliydi
+  - Ekip üyelerinin bir kısmı görevlerini daha çok benimsemeliydi
+
 
 -**Diğer Notlar**:
 - N/A
